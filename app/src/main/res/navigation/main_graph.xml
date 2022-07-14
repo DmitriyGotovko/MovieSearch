@@ -20,7 +20,7 @@
         android:label="fragment_item"
         tools:layout="@layout/fragment_item">
         <argument
-            android:name="ig"
+            android:name="id"
             app:argType="string" />
     </fragment>
 </navigation>
