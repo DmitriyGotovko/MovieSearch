@@ -24,7 +24,9 @@ class ItemFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.textTitle.text = args.id
-        binding.textGenre.text = args.id
+        binding.textTitle.text = args.movie.title
+        binding.textGenre.text = args.movie.genre
+        binding.textDescription.text = args.movie.description
+
     }
 }

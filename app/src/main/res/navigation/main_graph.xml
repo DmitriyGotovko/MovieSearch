@@ -20,7 +20,7 @@
         android:label="fragment_item"
         tools:layout="@layout/fragment_item">
         <argument
-            android:name="id"
-            app:argType="string" />
+            android:name="movie"
+            app:argType="com.example.moviesearch.data.Movie" />
     </fragment>
 </navigation>

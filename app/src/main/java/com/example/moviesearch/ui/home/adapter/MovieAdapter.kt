@@ -7,7 +7,7 @@ import com.example.moviesearch.data.Movie
 import com.example.moviesearch.databinding.ItemMovieBinding
 
 class MovieAdapter(
-    private val onClick: (id: String) -> Unit
+    private val onClick: (movie: Movie) -> Unit
 ) : RecyclerView.Adapter<MovieViewHolder>() {
 
     private var list = arrayListOf<Movie>()
@@ -26,7 +26,7 @@ class MovieAdapter(
         list[position].let { movie ->
             holder.bind(movie)
             holder.itemView.setOnClickListener {
-                onClick(movie.title)
+                onClick(movie)
             }
         }
     }

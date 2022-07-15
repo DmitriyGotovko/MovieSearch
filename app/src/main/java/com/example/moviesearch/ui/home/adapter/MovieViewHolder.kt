@@ -11,5 +11,6 @@ class MovieViewHolder(
     fun bind(item: Movie) {
         binding.title.text = item.title
         binding.genre.text = item.genre
+        binding.description.text = item.description
     }
 }

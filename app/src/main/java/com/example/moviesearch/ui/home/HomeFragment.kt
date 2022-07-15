@@ -29,6 +29,11 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+//        viewModel.onLoading = {
+//            binding.progressBar.post {
+//                binding.progressBar.visibility = if (it) View.VISIBLE else GONE
+//            }
+//        }
         viewModel.listMovies.observe(viewLifecycleOwner) {
             setList(it)
         }
