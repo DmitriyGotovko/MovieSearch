@@ -39,8 +39,7 @@ class HomeFragment : Fragment() {
         }
         viewModel.getMovie()
     }
-
-
+    
     fun setList(list: ArrayList<Movie>) {
         binding.recyclerView.run {
             if (adapter == null) {
