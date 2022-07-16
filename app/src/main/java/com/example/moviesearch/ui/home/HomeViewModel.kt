@@ -14,7 +14,7 @@ class HomeViewModel : ViewModel() {
 
     private val repository = MovieRepository()
 
-    lateinit var onLoading: (isLoading: Boolean) -> Unit
+//    lateinit var onLoading: (isLoading: Boolean) -> Unit
 
     fun getMovie() {
         viewModelScope.launch(Dispatchers.IO) {

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.moviesearch.data.Movie
 import com.example.moviesearch.databinding.FragmentHomeBinding
 import com.example.moviesearch.ui.home.adapter.MovieAdapter
@@ -50,8 +50,8 @@ class HomeFragment : Fragment() {
                         )
                     )
                 }
-                layoutManager =
-                    LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+                layoutManager = GridLayoutManager(context, 3)
+//                    LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             }
             (adapter as? MovieAdapter)?.setList(list)
         }

@@ -13,7 +13,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="20dp"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textGenre"
@@ -23,7 +24,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="12dp"
-        android:textColor="@color/gray" />
+        android:textColor="@color/gray"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textDescription"
@@ -33,6 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="12dp"
-        android:textColor="@color/gray" />
+        android:textColor="@color/gray"
+        android:gravity="center" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
